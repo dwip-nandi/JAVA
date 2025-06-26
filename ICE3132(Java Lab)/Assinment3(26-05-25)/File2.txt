@@ -1,0 +1,1 @@
+Repeat the problem withFile Write class of character streaming.
