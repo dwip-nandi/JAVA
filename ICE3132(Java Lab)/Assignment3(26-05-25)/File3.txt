@@ -1,0 +1,2 @@
+Write a program to create a text file (File3.txt) that contains the first half of the 
+text of filte class of character streaming.

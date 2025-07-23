@@ -1,3 +1,0 @@
-Write a program to create a text file (File3.txt) that contains the first half of the 
-text of file Filel.txt andlast half of the text of File2.txt using FileOutputStream class 
-of byte streaming
