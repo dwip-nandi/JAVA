@@ -1,22 +1,20 @@
 
-// Write a java (GUI) program to create Radio Buttons, Combo box and Check Boxes. Also create two 
-// panels which include those Radio Buttons, Combo box and Check boxes.
 import javax.swing.*;
 import java.awt.*;
 
-public class problem_5 {
+public class planeLayout {
     public static void main(String[] args) {
         // Create main frame
         JFrame frame = new JFrame("GUI with Panels, RadioButtons, ComboBox, CheckBoxes");
-        frame.setSize(800, 500);
+        frame.setSize(800, 300);
         frame.setLocation(200, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new FlowLayout()); // Two panels side by side
+        frame.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 20)); // spacing
 
         // -------- Panel 1: Radio Buttons and Combo Box --------
         JPanel panel1 = new JPanel();
         panel1.setBorder(BorderFactory.createTitledBorder("Panel 1: Gender & Country"));
-        panel1.setLayout(new GridLayout(4, 1));
+        panel1.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10)); // Flow layout inside panel
 
         // Radio buttons
         JRadioButton male = new JRadioButton("Male");
@@ -39,7 +37,7 @@ public class problem_5 {
         // -------- Panel 2: Checkboxes --------
         JPanel panel2 = new JPanel();
         panel2.setBorder(BorderFactory.createTitledBorder("Panel 2: Skills"));
-        panel2.setLayout(new GridLayout(4, 1));
+        panel2.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10)); // Flow layout inside panel
 
         JCheckBox java = new JCheckBox("Java");
         JCheckBox cpp = new JCheckBox("C++");
